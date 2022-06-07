@@ -8,7 +8,7 @@ export const FeedBackTypes = {
   BUG: {
     title: "Problema",
     image: {
-      lg: <BugBeetle size={50} />,
+      lg: <BugBeetle className='ml-2' size={50} />,
       sm: <BugBeetle size={30} />,
       alt: "Imagem de um inseto",
     },
