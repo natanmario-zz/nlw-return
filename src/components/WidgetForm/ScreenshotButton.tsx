@@ -26,6 +26,8 @@ export function ScreenshotButton({
   }
 
   if (screenshot) {
+    console.log(screenshot);
+
     return (
       <button
         type='button'
@@ -34,6 +36,9 @@ export function ScreenshotButton({
         text-zinc-400 hover:text-zinc-100 transition-colors'
         style={{
           backgroundImage: `url(${screenshot})`,
+          backgroundSize: "cover",
+          backgroundPosition: "65%",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <Trash weight='fill' />
